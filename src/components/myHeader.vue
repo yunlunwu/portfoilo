@@ -9,38 +9,36 @@
       <v-container>
         <v-row>
           <v-col cols="12">
-            <div align-self="center" class="reverse justify-center d-flex bp400">
-              <v-app-bar-title class="headline">
-                  <span class="black--text">Aaron</span>
-                  <span class="blue--text">WU</span>
-                  <span class="black--text">Space</span>
-              </v-app-bar-title>
-            </div>
             <div align-self="center" class="lang">
               <v-list-item>
                 <v-list-item-title class="contact">
+                  <span class="black--text">Aaron</span>
+                  <span class="blue--text">WU</span>
+                  <span class="black--text">Space</span>
+              </v-list-item-title>
+                <v-list-item-title class="contact">
                   <a
                     href="/aboutUs"
                     class="contact text-decoration-none"
-                  >home</a>
+                  >HOME</a>
                 </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
                     href="/aboutUs"
                     class="contact text-decoration-none"
-                  >resume</a>
+                  >RESUME</a>
                 </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
                     href="/aboutUs"
                     class="contact text-decoration-none"
-                  >portfolio</a>
+                  >PORTFILIO</a>
                 </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
                     href="/aboutUs"
                     class="contact text-decoration-none"
-                  >contact</a>
+                  >CONTACT</a>
                 </v-list-item-title>
               </v-list-item>
             </div>

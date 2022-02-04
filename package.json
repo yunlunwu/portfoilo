@@ -14,6 +14,7 @@
     "js-cookie": "^3.0.1",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
+    "vue-compare-image": "^0.2.0",
     "vue-i18n": "^8.27.0",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.3",
@@ -22,6 +23,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@mdi/font": "^6.5.95",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

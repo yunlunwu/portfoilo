@@ -12,7 +12,7 @@
       <br>
       <br>
       <v-btn large to="/" class="mt-10 flash animated infinite">
-        <v-icon>mdi-arrow_back</v-icon>GO HOME
+        <v-icon>mdi-arrow-left</v-icon>GO HOME
       </v-btn>
     </div>
   </v-layout>
