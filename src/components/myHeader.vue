@@ -8,13 +8,18 @@
     >
       <v-container>
         <v-row>
-          <v-col cols="12">
+          <v-col class="text-left hidden-md-and-up">
+            <span class="black--text">Aaron</span>
+            <span class="blue--text">WU</span>
+            <span class="black--text">Scope</span>
+          </v-col>
+          <v-col cols="12" class="hidden-sm-and-down">
             <div align-self="center" class="lang">
               <v-list-item>
                 <v-list-item-title class="contact">
                   <span class="black--text">Aaron</span>
                   <span class="blue--text">WU</span>
-                  <span class="black--text">Space</span>
+                  <span class="black--text">Scope</span>
               </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
@@ -43,9 +48,75 @@
               </v-list-item>
             </div>
           </v-col>
+          <v-col class="text-right hidden-md-and-up">
+            <v-icon large style="color: black;" @click="drawer = true">mdi-menu-open</v-icon>
+          </v-col>
         </v-row>
       </v-container>
     </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      temporary
+      right
+    >
+      <v-list
+        nav
+      >
+        <v-btn
+          absolute
+          icon
+          dark
+          right
+          @click="showPopup"
+        >
+          <v-icon style="color: black;">
+            mdi-close
+          </v-icon>
+        </v-btn>
+        <v-list-item class="mt-8 mb-0">
+          <v-list-item-title style="border-left: 4px solid #219655;">
+            <a class="text text-decoration-none" href="/"> &nbsp;  HOME </a>
+          </v-list-item-title>
+        </v-list-item>
+        <v-list-item class="mb-0">
+          <v-list-item-title style="border-left: 4px solid #219655;">
+            <a class="text text-decoration-none" href="/resume"> &nbsp; RESUME </a>
+          </v-list-item-title>
+        </v-list-item>
+        <v-list-item class="mb-0">
+          <v-list-item-title style="border-left: 4px solid #219655;">
+            <a class="text text-decoration-none" href="/portfolio"> &nbsp; PORTFOLIO </a>
+          </v-list-item-title>
+        </v-list-item>
+        <v-list-item class="mb-0">
+          <v-list-item-title style="border-left: 4px solid #219655;">
+            <a class="text text-decoration-none text-uppercase" href="/contact"> &nbsp; CONTACT </a>
+          </v-list-item-title>
+        </v-list-item>
+        <!-- <v-list-item class="mb-0" style="width:100%">
+          <v-list-group
+            no-action
+            class="ml-n2"
+            style="width:100%"
+          >
+            <template #activator>
+              <v-list-item-title style="border-left: 4px solid #219655;">
+                <a class="text text-uppercase"> &nbsp; {{ $t('home.p5') }}</a>
+              </v-list-item-title>
+            </template>
+            <v-list-item
+              v-for="(item,i) in languages"
+              :key="i"
+              link
+              @click="setLanguage(item.content)"
+            >
+              <v-list-item-title style="cursor:pointer" :class="{ hightlight: language == item.content}" v-text="item.title" />
+            </v-list-item>
+          </v-list-group>
+        </v-list-item> -->
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -54,7 +125,6 @@
 export default {
   data () {
     return {
-      clipped: false,
       drawer: false,
       dialog: false,
       languages: [
@@ -80,6 +150,9 @@ export default {
     // }
   },
   methods: {
+    showPopup () {
+      this.drawer = false
+    },
     // handleSetLanguage (lang) {
     //   Cookies.set('language', lang, { expires: 1000 })
     //   location.reload()
