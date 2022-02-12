@@ -17,6 +17,8 @@ let router = new Router({
       redirect: { name: 'home' },
       children: [
         { path: 'home', name: 'home', component: Home, meta: { keepAlive: true, noresposive: true } },
+        { path: 'resume', name: 'resume', component: () => import('@/pages/resume.vue'), meta: { keepAlive: true, noresposive: true } },
+        { path: 'contact', name: 'contact', component: () => import('@/pages/contact.vue'), meta: { keepAlive: true, noresposive: true } },
         // { path: 'characters', name: 'characters', component: () => import('@/pages/characters.vue'), meta: { keepAlive: true, noresposive: true } },
         // { path: 'characters/:id', name: 'characterDetail', component: () => import('@/pages/characterDetail.vue'), meta: { keepAlive: true, noresposive: true } }
       ]

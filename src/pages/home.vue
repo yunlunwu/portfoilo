@@ -1,9 +1,9 @@
 <template>
-  <v-layout column justify-center align-center class="mt-10 pt-2">
+  <v-layout column justify-center align-center class="mt-5 pt-2">
     <VueCompareImage
-      class="hidden-md-and-down"
+      class="hidden-md-and-down text-center"
       hover
-      :style="{ minWidth: '1300px', maxHeight: '400px' }"
+      :style="{ minWidth: '1000px', maxHeight: '400px' }"
       :sliderLineWidth="sliderLine"
       :handleSize="hSize"
       :leftImage="leftImage"
@@ -110,7 +110,7 @@ export default {
           icon: "mdi-stack-overflow"
         },
         {
-          href: "www.linkedin.com/in/yun-lun-wu-05582415a",
+          href: "https://www.linkedin.com/in/aaron-wu-05582415a/",
           icon: "mdi-linkedin"
         },
         {
@@ -123,8 +123,8 @@ export default {
         }
       ],
       text1: ["Front-End Developer", "Game Lover", "Web Developer", "Software Engineer"],
-      leftImage: "/static/img/home/image03.png",
-      rightImage: "/static/img/home/image01.JPG",
+      leftImage: "/static/img/home/image01.JPG",
+      rightImage: "/static/img/home/image03.png",
       leftImage2: "/static/img/home/image02.JPG",
       rightImage2: "/static/img/home/image01.JPG",
       sliderLine: 0,
@@ -176,5 +176,15 @@ export default {
 .vue-typer .custom.caret.selecting {
   display: inline-block;
   background-color: #e91e63;
+}
+</style>
+<style lang="scss">
+.vci-container{
+  .left-image{
+    // max-width: 1000px;
+  }
+  .right-image {
+    // max-width: 1000px;
+  }
 }
 </style>

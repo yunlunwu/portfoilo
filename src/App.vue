@@ -1,18 +1,6 @@
 <template>
   <v-app id="app">
     <router-view></router-view>
-    <!-- <div class="topUp" v-if="show" @click="toTop">
-      <div
-        style="{
-          height: 100%;
-          width: 100%;
-          box-shadow: 0 0 6px rgba(0,0,0, .12);
-          text-align: center;
-        }"
-      >
-        <img src="/static/img/common/top.png" alt="" style="width: 100%;display:block;">
-      </div>
-    </div> -->
   </v-app>
 </template>
 
@@ -24,6 +12,17 @@ export default {
     return {
       show: false
     }
+  },
+  mounted () {
+    window.addEventListener('scroll', () => {
+      let scrollt = document.documentElement.scrollTop + document.body.scrollTop
+      if (scrollt > 200) {
+        this.show = true
+      }
+      if (scrollt === 0) {
+        this.show = false
+      }
+    })
   },
   metaInfo: {
     title: "Home",

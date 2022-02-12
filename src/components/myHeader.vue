@@ -23,25 +23,25 @@
               </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
-                    href="/aboutUs"
+                    href="/"
                     class="contact text-decoration-none"
                   >HOME</a>
                 </v-list-item-title>
                 <v-list-item-title class="contact">
                   <a
-                    href="/aboutUs"
+                    href="/resume"
                     class="contact text-decoration-none"
                   >RESUME</a>
                 </v-list-item-title>
-                <v-list-item-title class="contact">
+                <!-- <v-list-item-title class="contact">
                   <a
-                    href="/aboutUs"
+                    href="/portfolio"
                     class="contact text-decoration-none"
-                  >PORTFILIO</a>
-                </v-list-item-title>
+                  >PORTFOILIO</a>
+                </v-list-item-title> -->
                 <v-list-item-title class="contact">
                   <a
-                    href="/aboutUs"
+                    href="/contact"
                     class="contact text-decoration-none"
                   >CONTACT</a>
                 </v-list-item-title>
@@ -84,11 +84,11 @@
             <a class="text text-decoration-none" href="/resume"> &nbsp; RESUME </a>
           </v-list-item-title>
         </v-list-item>
-        <v-list-item class="mb-0">
+        <!-- <v-list-item class="mb-0">
           <v-list-item-title style="border-left: 4px solid #219655;">
             <a class="text text-decoration-none" href="/portfolio"> &nbsp; PORTFOLIO </a>
           </v-list-item-title>
-        </v-list-item>
+        </v-list-item> -->
         <v-list-item class="mb-0">
           <v-list-item-title style="border-left: 4px solid #219655;">
             <a class="text text-decoration-none text-uppercase" href="/contact"> &nbsp; CONTACT </a>
