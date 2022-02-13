@@ -34,106 +34,101 @@
           <span>Contact</span>
           <span style="color: #1E90FF;">Form</span>
         </h2>
-          <v-form v-model="valid">
-        <v-container>
-          <v-row>
-            <v-col
-              cols="12"
-            >
-              <v-text-field
-                v-model="firstname"
-                :rules="nameRules"
-                :counter="10"
-                label="First name"
-                required
-              ></v-text-field>
-            </v-col>
-
-            <v-col
-              cols="12"
-            >
-              <v-text-field
-                v-model="lastname"
-                :rules="nameRules"
-                :counter="10"
-                label="Last name"
-                required
-              ></v-text-field>
-            </v-col>
-
-            <v-col
-              cols="12"
-            >
-              <v-text-field
-                v-model="email"
-                :rules="emailRules"
-                label="E-mail"
-                required
-              ></v-text-field>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-form>
+        <form ref="form" @submit.prevent="sendEmail">
+          <v-container>
+            <v-row>
+              <v-col
+                cols="12"
+              >
+                <v-text-field
+                  type="text"
+                  v-model="user_name"
+                  :rules="nameRules"
+                  :counter="20"
+                  label="Name"
+                  name="user_name"
+                  required
+                ></v-text-field>
+              </v-col>
+              <v-col
+                cols="12"
+              >
+                <v-text-field
+                  type="email"
+                  v-model="user_email"
+                  :rules="emailRules"
+                  label="E-mail"
+                  name="user_email"
+                  required
+                ></v-text-field>
+              </v-col>
+              <v-col
+                cols="12"
+              >
+                <v-textarea
+                  v-model="message"
+                  :rules="bodyErrors"
+                  label="Message"
+                  name="message"
+                  required
+                ></v-textarea>
+              </v-col>
+              <v-col
+                cols="12"
+              >
+                <v-btn
+                  type="submit"
+                  class="mr-4"
+                  value="Send"
+                >
+                  submit
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-container>
+         </form>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
 export default {
   data() {
     return {
      valid: false,
-      firstname: '',
-      lastname: '',
+      user_name: '',
+      user_email: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
+        v => v.length <= 20 || 'Name must be less than 20 characters',
       ],
-      email: '',
+      message: '',
       emailRules: [
         v => !!v || 'E-mail is required',
         v => /.+@.+/.test(v) || 'E-mail must be valid',
       ],
+      bodyErrors: [
+        v => !!v || 'Messager is required'
+      ]
     }
   },
   methods: {
-    submit() {
-      this.$v.$touch();
+    sendEmail() {
+      emailjs.sendForm('service_33hsze8', 'template_1nv0nva', this.$refs.form, 'user_XxFSwk0iQhZYqps7CzOxA')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+            this.reset()
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
     },
-    clear() {
-      this.$v.$reset();
-      this.name = "";
-      this.email = "";
-      this.body = "";
-    }
-  },
-  computed: {
-    nameErrors() {
-      const errors = [];
-      if (!this.$v.name.$dirty) return errors;
-      !this.$v.name.maxLength &&
-        errors.push("Name must be at most 20 characters long");
-      !this.$v.name.required && errors.push("Name is required.");
-      return errors;
+    reset () {
+      this.$refs.form.reset()
     },
-    emailErrors() {
-      const errors = [];
-      if (!this.$v.email.$dirty) return errors;
-      !this.$v.email.email && errors.push("Must be valid e-mail");
-      !this.$v.email.required && errors.push("E-mail is required");
-      return errors;
-    },
-    bodyErrors() {
-      const errors = [];
-      if (!this.$v.body.$dirty) return errors;
-      !this.$v.body.minLength &&
-        errors.push("Text must be at least 20 characters long");
-      !this.$v.body.required && errors.push("Text is required");
-      return errors;
-    }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
