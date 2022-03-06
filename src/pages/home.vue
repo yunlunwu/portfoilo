@@ -106,10 +106,6 @@ export default {
       icons: [
         { href: "https://github.com/EldinZaimovic", icon: "mdi-github" },
         {
-          href: "https://stackoverflow.com/users/story/9660700",
-          icon: "mdi-stack-overflow"
-        },
-        {
           href: "https://www.linkedin.com/in/aaron-wu-05582415a/",
           icon: "mdi-linkedin"
         },

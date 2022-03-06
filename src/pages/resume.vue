@@ -173,41 +173,51 @@ export default {
       educations: [
         {
           color: 'cyan',
-          year: '1960',
-          title: 'test1',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2013',
+          title: 'High School (Taiwan)',
+          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,' +
+          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
+          'vix an salutandi sententiae.'
         },
         {
           color: 'green',
-          year: '1970',
-           title: 'test2',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2015',
+          title: 'IES Fundation (Brisbane, AU)',
+          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,' +
+          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
+          'vix an salutandi sententiae.'
         },
         {
           color: 'pink',
-          year: '1980',
-          title: 'test3',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2020',
+          title: 'The Univisity of Queensland, Bachelor Honour degree (Brisbane, AU)',
+          description: 'Studied with hornour degress software engineering marg' +
+          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
+          'vix an salutandi sententiae.'
         }
       ],
       experience: [
         {
           color: 'cyan',
-          year: '1960',
-          title: 'test1',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2016',
+          title: 'Australia post office (Alexandra hills & Mansfield QLD, AU )',
+          description: 'Performed opening and closing functions, including balancing the cash counter and ' +
+          'resolved emergency situation such as customer missing their parcel, Australia passport office reject their application form. Also,' + 
+          'served customer to ensure that guest has an excellence satisfaction customer service.'
         },
         {
           color: 'green',
-          year: '1970',
-           title: 'test2',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2019',
+          title: 'Front-end developer (SPACE Platform company, AU)',
+          description: 'Undertake the web-app implementation, using PWA (progressive web app) new software development methodology and has strong JavaScript programming skill.' +
+          'As well as, Understand cloud computing process and knowledge with back-end developments techniques such as FingerPrint, AWS, Linux.' 
         },
         {
           color: 'pink',
-          year: '1980',
-          title: 'test3',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.'
+          year: '2020',
+          title: 'web developer(Rainbow tech company, Taiwan)',
+          description: 'Undertake all company office website, using vuetify.com (front-end design framework) and vue.js '+
+          'and understand operation of GA & GSC in website connection. Also, undertake the shared component on the back-office front-end interfac.'
         }
       ]
     }
