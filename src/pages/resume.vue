@@ -151,16 +151,21 @@
         </div>
       </v-flex>
       <div class="my-6 pt-2">
-        <v-btn
-          href=""
-          target="_blank"
-          color="#1E90FF"
-          dark
-          large
+        <a  
+          href="/static/img/resume/AaronWu_Resume.PDF"
+          download="aaronwu_resume"
         >
-          Download Resume
-          <v-icon right dark>mdi-file-download</v-icon>
-        </v-btn>
+          <v-btn
+            href=""
+            target="_blank"
+            color="#1E90FF"
+            dark
+            large
+          >
+            Download Resume
+            <v-icon right dark>mdi-file-download</v-icon>
+          </v-btn>
+        </a>
       </div>
     </v-layout>
   </v-layout>
