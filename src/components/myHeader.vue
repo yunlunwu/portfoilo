@@ -16,11 +16,13 @@
           <v-col cols="12" class="hidden-sm-and-down">
             <div align-self="center" class="lang">
               <v-list-item>
-                <v-list-item-title class="contact">
-                  <span class="black--text">Aaron</span>
-                  <span class="blue--text">WU</span>
-                  <span class="black--text">Scope</span>
-              </v-list-item-title>
+                <a href="/" style="text-decoration:none;">
+                  <v-list-item-title class="contact">
+                    <span class="black--text">Aaron</span>
+                    <span class="blue--text">WU</span>
+                    <span class="black--text">Scope</span>
+                  </v-list-item-title>
+                </a>
                 <v-list-item-title class="contact">
                   <a
                     href="/"

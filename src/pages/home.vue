@@ -39,7 +39,7 @@
     <v-flex xs12 sm6 md4 lg4 xl4>
       <v-card flat color="transparent" max-width="500">
         <v-card-title primary-title>
-          <div>
+          <div class="intro">
             <h3 class="headline mb-0">
               <span>About</span>
               <span style="color: #1E90FF;">Me</span>
@@ -49,11 +49,13 @@
                 I’m Aaron wu . I'm a front-end developer who
                 is passionate about
                 <span
-                  class="font-weight-bold" style="color:#1E90FF;"
+                  class="font-weight-bold" style="color:#1E90FF; word-break:break-word;"
                 >VUE.js</span>, creating great website interface,
-                fighting for simplicity over complexity. I have a proven track record of good communication, 
-                 having worked as liaison between various teams, 
-                 including big programming project, design and quality assurance. 
+                fighting for simplicity over complexity.
+                Knowledgeable Front End Developer adept at creating successful websites that
+                meet customer needs. Specializing in collaborating with customers to gather
+                requirements, produce plans and improve designs for usability and functionality.
+                Fully proficient in HTML & CSS and Javascript.
               </p>
             </div>
           </div>
@@ -172,6 +174,13 @@ export default {
 .vue-typer .custom.caret.selecting {
   display: inline-block;
   background-color: #e91e63;
+}
+</style>
+<style lang="scss" scoped>
+.intro{
+  p{
+    word-break: break-word;
+  }
 }
 </style>
 <style lang="scss">
