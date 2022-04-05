@@ -205,7 +205,7 @@ export default {
           color: 'cyan',
           year: '2016',
           title: 'Australia post office (Alexandra hills & Mansfield QLD, AU )',
-          description: 'Register in counter'
+          description: 'Counter staff'
         },
         {
           color: 'green',
