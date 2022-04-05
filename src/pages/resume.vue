@@ -20,8 +20,8 @@
               <h2 :class="`headline font-weight-light mb-4 ${edu.color}--text`">
                 {{ edu.title }}
               </h2>
-              <div>
-                {{ edu.description }}
+              <div v-html="edu.description">
+                <!-- {{ edu.description }} -->
               </div>
             </div>
           </v-timeline-item>
@@ -176,29 +176,28 @@ export default {
   data() {
     return {
       educations: [
-        {
-          color: 'cyan',
-          year: '2013',
-          title: 'High School (Taiwan)',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,' +
-          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
-          'vix an salutandi sententiae.'
-        },
+        // {
+        //   color: 'cyan',
+        //   year: '2013',
+        //   title: 'High School (Taiwan)',
+        //   description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,' +
+        //   'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
+        //   'vix an salutandi sententiae.'
+        // },
         {
           color: 'green',
           year: '2015',
           title: 'IES Fundation (Brisbane, AU)',
-          description: 'Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut,' +
-          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
-          'vix an salutandi sententiae.'
+          description: 'Laid the information technology fundation before entering University.'
         },
         {
           color: 'pink',
           year: '2020',
           title: 'The Univisity of Queensland, Bachelor Honour degree (Brisbane, AU)',
-          description: 'Studied with hornour degress software engineering marg' +
-          'sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus,' + 
-          'vix an salutandi sententiae.'
+          description: 'Studied with hornour degress software engineering. <br>' +
+          '• Member of student council.<br>' + '• Member of UQ TASIA team.<br>'+
+          '• Member of BSA (Brisbane student association)<br>' +
+          '• Engineering Undergraduate society (EUS) member' 
         }
       ],
       experience: [
@@ -206,23 +205,19 @@ export default {
           color: 'cyan',
           year: '2016',
           title: 'Australia post office (Alexandra hills & Mansfield QLD, AU )',
-          description: 'Performed opening and closing functions, including balancing the cash counter and ' +
-          'resolved emergency situation such as customer missing their parcel, Australia passport office reject their application form. Also,' + 
-          'served customer to ensure that guest has an excellence satisfaction customer service.'
+          description: 'Register in counter'
         },
         {
           color: 'green',
           year: '2019',
           title: 'Front-end developer (SPACE Platform company, AU)',
-          description: 'Undertake the web-app implementation, using PWA (progressive web app) new software development methodology and has strong JavaScript programming skill.' +
-          'As well as, Understand cloud computing process and knowledge with back-end developments techniques such as FingerPrint, AWS, Linux.' 
+          description: 'Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.'
         },
         {
           color: 'pink',
           year: '2020',
           title: 'web developer(Rainbow tech company, Taiwan)',
-          description: 'Undertake all company office website, using vuetify.com (front-end design framework) and vue.js '+
-          'and understand operation of GA & GSC in website connection. Also, undertake the shared component on the back-office front-end interfac.'
+          description: 'Undertake company website.'
         }
       ]
     }

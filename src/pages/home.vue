@@ -106,7 +106,7 @@ export default {
   data() {
     return {
       icons: [
-        { href: "https://github.com/EldinZaimovic", icon: "mdi-github" },
+        { href: "https://github.com/yunlunwu", icon: "mdi-github" },
         {
           href: "https://www.linkedin.com/in/aaron-wu-05582415a/",
           icon: "mdi-linkedin"
