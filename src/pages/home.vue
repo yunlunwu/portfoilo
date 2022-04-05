@@ -121,10 +121,10 @@ export default {
         }
       ],
       text1: ["Front-End Developer", "Game Lover", "Web Developer", "Software Engineer"],
-      leftImage: "/static/img/home/image01.JPG",
-      rightImage: "/static/img/home/image03.png",
+      leftImage: "/static/img/home/image01.jpg",
+      rightImage: "/static/img/home/image03.jpg",
       leftImage2: "/static/img/home/image02.JPG",
-      rightImage2: "/static/img/home/image01.JPG",
+      rightImage2: "/static/img/home/image01.jpg",
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
