@@ -124,7 +124,7 @@ export default {
       leftImage: "/static/img/home/image01.JPG?t=20220405",
       rightImage: "/static/img/home/image03.jpg?t=20220405",
       leftImage2: "/static/img/home/image02.JPG",
-      rightImage2: "/static/img/home/image01.JPG?t=20220405",
+      rightImage2: "/static/img/home/mobile_image01.JPG?t=20220405",
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5

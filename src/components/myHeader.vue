@@ -77,12 +77,12 @@
           </v-icon>
         </v-btn>
         <v-list-item class="mt-8 mb-0">
-          <v-list-item-title style="border-left: 4px solid #219655;">
+          <v-list-item-title style="border-left: 4px solid #359ffd;">
             <a class="text text-decoration-none" href="/"> &nbsp;  HOME </a>
           </v-list-item-title>
         </v-list-item>
         <v-list-item class="mb-0">
-          <v-list-item-title style="border-left: 4px solid #219655;">
+          <v-list-item-title style="border-left: 4px solid #359ffd;">
             <a class="text text-decoration-none" href="/resume"> &nbsp; RESUME </a>
           </v-list-item-title>
         </v-list-item>
@@ -92,7 +92,7 @@
           </v-list-item-title>
         </v-list-item> -->
         <v-list-item class="mb-0">
-          <v-list-item-title style="border-left: 4px solid #219655;">
+          <v-list-item-title style="border-left: 4px solid #359ffd;">
             <a class="text text-decoration-none text-uppercase" href="/contact"> &nbsp; CONTACT </a>
           </v-list-item-title>
         </v-list-item>
