@@ -3,7 +3,7 @@
     <VueCompareImage
       class="hidden-md-and-down text-center"
       hover
-      :style="{ minWidth: '1000px', maxHeight: '400px' }"
+      :style="{ minWidth: '1000px', maxHeight: '600px' }"
       :sliderLineWidth="sliderLine"
       :handleSize="hSize"
       :leftImage="leftImage"
